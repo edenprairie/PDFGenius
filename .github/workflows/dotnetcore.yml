@@ -16,7 +16,8 @@ jobs:
     - name: find current folder
       run: |
            pwd
-           ls -l ./aspnet-core
+           cd ./aspnet-core
+           ls -l
     - name: Build with dotnet
       working-directory: ./aspnet-core
       run: dotnet build --configuration Release
