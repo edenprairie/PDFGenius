@@ -9,7 +9,11 @@ jobs:
     
     steps:
     - name: Test
-      run: pwd
+      run: |
+          pwd
+          ls -l
+          cd ./aspnet-core
+          ls -l
     #- uses: actions/checkout@v1
     #- name: Setup .NET Core
     #  uses: actions/setup-dotnet@v1
