@@ -1,0 +1,16 @@
+name: Angular front end build
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Get all packages
+      run: npm install 
+    - name: Build Angular site
+      run: |
+        ng build --prod      
