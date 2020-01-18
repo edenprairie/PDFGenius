@@ -13,10 +13,8 @@ jobs:
     - name: Get all packages
       run: npm install
       working-directory: ./angular
-       
-    - name: Angular Github Actions
-      uses: mayur-rawte/github-angular-actions@latest
+
     - name: Build Angular site
       run: |
-        ng build --prod      
+           npm run build
       working-directory: ./angular
