@@ -14,7 +14,9 @@ jobs:
         with:
          dotnet-version: 2.2.108
       - name: Build with dotnet
-        run: dotnet build
+        run: |
+              ls
+              dotnet build
         working-directory: ./aspnet-core
         #run: dotnet build --configuration Release
       
