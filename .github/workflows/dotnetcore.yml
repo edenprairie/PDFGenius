@@ -16,6 +16,7 @@ jobs:
     - name: find current folder
       run: |
            pwd
+           ls -l
            cd ./aspnet-core
            ls -l
     - name: Build with dotnet
