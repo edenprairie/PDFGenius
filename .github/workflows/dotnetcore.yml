@@ -17,7 +17,9 @@ jobs:
       run: |
            pwd
            ls -l
-           cd ./aspnet-core
+           cd aspnet-core
+           ls -l
+           cd angular
            ls -l
     - name: Build with dotnet
       working-directory: ./aspnet-core
