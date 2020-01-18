@@ -13,7 +13,7 @@ jobs:
         run: |
            pwd
            ls -l
-           cd ./aspnet-core
+           chdir ./aspnet-core
            ls -l
 
     #- uses: actions/checkout@v1
