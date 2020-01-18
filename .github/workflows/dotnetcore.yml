@@ -14,7 +14,9 @@ jobs:
       with:
         dotnet-version: 2.2.108
     - name: find current folder
-      run: pwd 
+      run: |
+           pwd 
+           ls -l
     - name: Build with dotnet
-      working-directory: aspnet-core
+      working-directory: ../aspnet-core
       run: dotnet build --configuration Release
