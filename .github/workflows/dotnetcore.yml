@@ -13,8 +13,7 @@ jobs:
         run: |
            pwd
            ls -l
-           chdir ./aspnet-core
-           ls -l
+           ls ./aspnet-core -l 
 
     #- uses: actions/checkout@v1
     #- name: Setup .NET Core
