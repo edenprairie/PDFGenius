@@ -6,6 +6,8 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    env:
+      WORKING_FOLDER: ./aspnet-core
 
     steps:
     - uses: actions/checkout@v1
@@ -13,14 +15,5 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 2.2.108
-    #- name: find current folder
-    #  run: |
-    #       pwd
-    #       ls -l
-    #       cd aspnet-core
-    #       ls -l
-    #       cd angular
-    #       ls -l
     - name: Build with dotnet
-      working-directory: ./aspnet-core
       run: dotnet build --configuration Release
