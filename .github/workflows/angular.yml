@@ -17,5 +17,5 @@ jobs:
     - name: Build Angular site
       run: |
            npm run build
-           ls -l ./dist
+           ls -l ./dist/docker
       working-directory: ./angular
