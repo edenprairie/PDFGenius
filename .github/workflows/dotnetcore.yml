@@ -18,4 +18,5 @@ jobs:
     - name: Build with dotnet
       run: |
            ls -l 
-           dotnet build ./aspnet-core --configuration Release
+           dotnet build --configuration Release
+      working-directory: ./aspnet-core
