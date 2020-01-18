@@ -18,4 +18,4 @@ jobs:
     - name: Build with dotnet
       run: |
            ls -l 
-           dotnet build --configuration Release
+           dotnet build ./aspnet-core --configuration Release
