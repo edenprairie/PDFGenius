@@ -10,8 +10,8 @@ jobs:
     steps:
     - name: Test
       run: |
-          pwd
-          ls -l
+           pwd
+           ls -l
 
     #- uses: actions/checkout@v1
     #- name: Setup .NET Core
