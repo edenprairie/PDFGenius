@@ -6,13 +6,17 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+      
 
     steps:
     - uses: actions/checkout@v1
     - name: Get all packages
-      run: npm install 
+      run: npm install
+      working-directory: ./angular
+       
     - name: Angular Github Actions
       uses: mayur-rawte/github-angular-actions@latest
     - name: Build Angular site
       run: |
         ng build --prod      
+      working-directory: ./angular
