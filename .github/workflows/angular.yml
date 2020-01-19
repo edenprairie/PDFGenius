@@ -29,7 +29,7 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages # The branch the action should deploy to.
         FOLDER: angular/dist/pDFGenius # The folder the action should deploy.
-    - name: Archive code coverage results
+    - name: Archive Angular Website Content
       uses: actions/upload-artifact@v1
       with:
           name: Angular-Website-Content
