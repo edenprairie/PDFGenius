@@ -1,6 +1,9 @@
 name: Angular front end build
 
-on: [push]
+on: 
+ push:
+  paths:
+    - angular/**
 
 jobs:
   build:
