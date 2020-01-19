@@ -17,11 +17,11 @@ jobs:
         with:
          dotnet-version: '3.1.100' # SDK Version to use.
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        run: dotnet build --configuration Release -o build
         working-directory: ./aspnet-core
       - name: Public ASP Net Web API Content
         uses: actions/upload-artifact@v1
         with:
           name: ASPNet-WebAPI
-          path: aspnet-core/src/PDFGenius.HttpApi.Host/bin/Release/netcoreapp3.1
+          path: build
 
