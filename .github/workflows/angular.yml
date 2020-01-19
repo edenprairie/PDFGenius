@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Get all packages
+    - name: Get all packages and build Angular site
       run: npm install && npm run build
       working-directory: ./angular
 
