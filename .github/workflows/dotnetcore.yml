@@ -1,6 +1,9 @@
 name: .NET Core - Built based on abp.io
 
-on: [push]
+on: 
+ push:
+   paths: 
+     - aspnet-core/**
 
 jobs:
   build:
