@@ -23,5 +23,5 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: ASPNet-WebAPI
-          path: aspnet-core
+          path: aspnet-core/src/PDFGenius.HttpApi.Host/bin/Release/netcoreapp3.1
 
