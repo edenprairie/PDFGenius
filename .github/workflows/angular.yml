@@ -13,7 +13,9 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Get all packages and build Angular site
-      run: npm install && npm run build
+      run: |
+           npm install 
+           ./node_modules/@angular/cli/bin/ng build --deployUrl=https://edenprairie.github.io/PDFGenius/ --prod=true --baseHref=      
       working-directory: ./angular
 
     - name: Publish generated content to GitHub Pages
