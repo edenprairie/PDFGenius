@@ -26,5 +26,6 @@ jobs:
           path: aspnet-core/build
       - name: package  
         run: dotnet pack --configuration Release
+        working-directory: ./aspnet-core
       - name: publish
         run: dotnet nuget push "bin/Release/PDFGenius.1.0.0.nupkg" --source "github"
