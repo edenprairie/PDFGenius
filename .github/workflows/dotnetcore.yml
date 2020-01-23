@@ -19,13 +19,13 @@ jobs:
       - name: Build with dotnet
         run: dotnet build --configuration Release -o build
         working-directory: ./aspnet-core
-      - name: Public ASP Net Web API Content
+      - name: Publish ASP Net Web API Content Artifacts
         uses: actions/upload-artifact@v1
         with:
           name: ASPNet-WebAPI
           path: aspnet-core/build
-      - name: package  
+      - name: Package Nuget  
         run: dotnet pack --configuration Release
         working-directory: ./aspnet-core
-      - name: publish
-        run: dotnet nuget push "bin/Release/PDFGenius.1.0.0.nupkg" 
+      - name: Publish Nuget 
+        run: dotnet nuget push "bin/Release/PDFGenius.1.0.0.nupkg" --source "https://github.com/edenprairie/PDFGenius/packages" 
