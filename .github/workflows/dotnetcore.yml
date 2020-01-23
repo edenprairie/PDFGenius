@@ -27,8 +27,11 @@ jobs:
       - name: Package Nuget  
         run: dotnet pack --configuration Release
         working-directory: ./aspnet-core
-      - name: Publish Nuget 
+      - name: Publish nuget
         run: |
-             nuget setApiKey $ACCESS_TOKEN
-             dotnet nuget push "bin/Release/PDFGenius.1.0.0.nupkg" --source "https://github.com/edenprairie/PDFGenius/" 
-        
+           for f in "bin/Release/*.nupkg"
+           do
+             curl -vX PUT -u "${{ secrets.ACCESS_TOKEN }}" -F package=@$f https://nuget.pkg.github.com/edenprairie/
+           done
+        shell: bash
+      
