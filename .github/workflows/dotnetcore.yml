@@ -29,6 +29,6 @@ jobs:
         working-directory: ./aspnet-core
       - name: Publish Nuget 
         run: |
-             dotnet nuget setApiKey $ACCESS_TOKEN
+             nuget setApiKey $ACCESS_TOKEN
              dotnet nuget push "bin/Release/PDFGenius.1.0.0.nupkg" --source "https://github.com/edenprairie/PDFGenius/" 
         
