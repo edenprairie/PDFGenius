@@ -1,0 +1,772 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_002{font-family:Arial,serif;font-size:8.1px;color:rgb(85,181,229);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_002{font-family:Arial,serif;font-size:8.1px;color:rgb(85,181,229);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_003{font-family:Arial,serif;font-size:15.1px;color:rgb(85,181,229);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Arial,serif;font-size:15.1px;color:rgb(85,181,229);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_004{font-family:Arial,serif;font-size:20.1px;color:rgb(77,82,117);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Arial,serif;font-size:20.1px;color:rgb(77,82,117);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_006{font-family:Arial,serif;font-size:11.1px;color:rgb(47,59,94);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_006{font-family:Arial,serif;font-size:11.1px;color:rgb(47,59,94);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_005{font-family:Arial,serif;font-size:14.1px;color:rgb(77,82,117);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-family:Arial,serif;font-size:14.1px;color:rgb(77,82,117);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Arial,serif;font-size:16.1px;color:rgb(77,82,117);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_007{font-family:Arial,serif;font-size:16.1px;color:rgb(77,82,117);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Arial,serif;font-size:8.1px;color:rgb(47,59,94);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_008{font-family:Arial,serif;font-size:8.1px;color:rgb(47,59,94);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_009{font-family:Arial,serif;font-size:7.0px;color:rgb(85,181,229);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_009{font-family:Arial,serif;font-size:7.0px;color:rgb(85,181,229);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Arial,serif;font-size:15.1px;color:rgb(92,91,91);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Arial,serif;font-size:15.1px;color:rgb(92,91,91);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Arial,serif;font-size:11.1px;color:rgb(85,181,229);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_011{font-family:Arial,serif;font-size:11.1px;color:rgb(85,181,229);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_030{font-family:Arial,serif;font-size:20.1px;color:rgb(254,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_030{font-family:Arial,serif;font-size:20.1px;color:rgb(254,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_012{font-family:Arial,serif;font-size:7.0px;color:rgb(95,97,130);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_012{font-family:Arial,serif;font-size:7.0px;color:rgb(95,97,130);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_013{font-family:Arial,serif;font-size:8.1px;color:rgb(114,114,114);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_013{font-family:Arial,serif;font-size:8.1px;color:rgb(114,114,114);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_015{font-family:Arial,serif;font-size:8.1px;color:rgb(95,97,130);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_015{font-family:Arial,serif;font-size:8.1px;color:rgb(95,97,130);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_014{font-family:Arial,serif;font-size:7.0px;color:rgb(169,167,187);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Arial,serif;font-size:7.0px;color:rgb(169,167,187);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_016{font-family:Arial,serif;font-size:11.1px;color:rgb(86,89,124);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_016{font-family:Arial,serif;font-size:11.1px;color:rgb(86,89,124);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_026{font-family:Arial,serif;font-size:10.1px;color:rgb(54,50,105);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_026{font-family:Arial,serif;font-size:10.1px;color:rgb(54,50,105);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_024{font-family:Arial,serif;font-size:8.1px;color:rgb(54,50,105);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_024{font-family:Arial,serif;font-size:8.1px;color:rgb(54,50,105);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_017{font-family:Arial,serif;font-size:7.0px;color:rgb(158,155,178);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_017{font-family:Arial,serif;font-size:7.0px;color:rgb(158,155,178);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_029{font-family:Arial,serif;font-size:7.0px;color:rgb(54,50,105);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_029{font-family:Arial,serif;font-size:7.0px;color:rgb(54,50,105);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_027{font-family:Arial,serif;font-size:7.0px;color:rgb(46,107,172);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_027{font-family:Arial,serif;font-size:7.0px;color:rgb(46,107,172);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_028{font-family:Arial,serif;font-size:7.0px;color:rgb(85,181,229);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_028{font-family:Arial,serif;font-size:7.0px;color:rgb(85,181,229);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_023{font-family:Arial,serif;font-size:8.1px;color:rgb(85,181,229);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_023{font-family:Arial,serif;font-size:8.1px;color:rgb(85,181,229);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_018{font-family:Arial,serif;font-size:7.0px;color:rgb(146,203,238);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_018{font-family:Arial,serif;font-size:7.0px;color:rgb(146,203,238);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_019{font-family:Arial,serif;font-size:7.0px;color:rgb(156,207,240);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_019{font-family:Arial,serif;font-size:7.0px;color:rgb(156,207,240);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_021{font-family:Arial,serif;font-size:8.1px;color:rgb(46,107,172);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_021{font-family:Arial,serif;font-size:8.1px;color:rgb(46,107,172);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_022{font-family:Arial,serif;font-size:7.0px;color:rgb(136,134,161);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_022{font-family:Arial,serif;font-size:7.0px;color:rgb(136,134,161);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_031{font-family:Arial,serif;font-size:7.8px;color:rgb(115,115,145);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_031{font-family:Arial,serif;font-size:7.8px;color:rgb(115,115,145);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_032{font-family:Arial,serif;font-size:7.8px;color:rgb(115,115,145);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_032{font-family:Arial,serif;font-size:7.8px;color:rgb(115,115,145);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_033{font-family:Arial,serif;font-size:10.1px;color:rgb(85,181,229);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_033{font-family:Arial,serif;font-size:10.1px;color:rgb(85,181,229);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_034{font-family:Arial,serif;font-size:10.1px;color:rgb(46,107,172);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_034{font-family:Arial,serif;font-size:10.1px;color:rgb(46,107,172);font-weight:normal;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="59522b24-4187-11ea-a5fd-0cc47a792c0a_id_59522b24-4187-11ea-a5fd-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-306px;top:0px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="img/background1.jpg" width=612 height=792></div>
+<div style="position:absolute;left:61.50px;top:256.31px" class="cls_002"><span class="cls_002">PREPARED FOR</span></div>
+<div style="position:absolute;left:306.00px;top:254.18px" class="cls_003"><span class="cls_003">GlobalHeart+ is designed  to make</span></div>
+<div style="position:absolute;left:61.50px;top:268.31px" class="cls_004"><span class="cls_004">Katherine Chavez</span></div>
+<div style="position:absolute;left:306.00px;top:271.78px" class="cls_003"><span class="cls_003">your test results make sense.</span></div>
+<div style="position:absolute;left:61.50px;top:303.11px" class="cls_002"><span class="cls_002">PREPARED FOR</span></div>
+<div style="position:absolute;left:306.00px;top:299.38px" class="cls_006"><span class="cls_006">Dignis simos ducimus qui blanditiis praesentium</span></div>
+<div style="position:absolute;left:61.50px;top:314.71px" class="cls_005"><span class="cls_005">May 10, 2016</span></div>
+<div style="position:absolute;left:306.00px;top:316.98px" class="cls_006"><span class="cls_006">voluptatum deleniti atque corrupti quos dolores</span></div>
+<div style="position:absolute;left:306.00px;top:334.58px" class="cls_006"><span class="cls_006">et quas molestias excepturi sint</span></div>
+<div style="position:absolute;left:61.50px;top:343.51px" class="cls_002"><span class="cls_002">HEALTHCARE PROVIDER</span></div>
+<div style="position:absolute;left:61.50px;top:355.11px" class="cls_005"><span class="cls_005">Dr. Brian Rudman</span></div>
+<div style="position:absolute;left:306.00px;top:366.38px" class="cls_002"><span class="cls_002">PART 1</span></div>
+<div style="position:absolute;left:306.00px;top:375.58px" class="cls_007"><span class="cls_007">GlobalHeart+ Score</span></div>
+<div style="position:absolute;left:306.00px;top:408.38px" class="cls_002"><span class="cls_002">PART 2</span></div>
+<div style="position:absolute;left:306.00px;top:417.58px" class="cls_007"><span class="cls_007">Test Results</span></div>
+<div style="position:absolute;left:306.00px;top:450.38px" class="cls_002"><span class="cls_002">PART 3</span></div>
+<div style="position:absolute;left:306.00px;top:459.58px" class="cls_007"><span class="cls_007">Test Results Continued</span></div>
+<div style="position:absolute;left:306.00px;top:492.38px" class="cls_002"><span class="cls_002">PART 4</span></div>
+<div style="position:absolute;left:306.00px;top:501.58px" class="cls_007"><span class="cls_007">Actionable Steps</span></div>
+<div style="position:absolute;left:204.00px;top:666.85px" class="cls_008"><span class="cls_008">Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas</span></div>
+<div style="position:absolute;left:204.00px;top:680.45px" class="cls_008"><span class="cls_008">molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</span></div>
+<div style="position:absolute;left:204.00px;top:694.05px" class="cls_008"><span class="cls_008">est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere.</span></div>
+<div style="position:absolute;left:204.00px;top:721.25px" class="cls_008"><span class="cls_008">©2016 Global Molecular Labs. All RIghts Reserved.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:802px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="img/background2.jpg" width=612 height=792></div>
+<div style="position:absolute;left:48.20px;top:105.91px" class="cls_009"><span class="cls_009">PATIENT</span></div>
+<div style="position:absolute;left:233.00px;top:105.71px" class="cls_009"><span class="cls_009">TEST WAS PERFORMED ON</span></div>
+<div style="position:absolute;left:426.60px;top:105.71px" class="cls_009"><span class="cls_009">YOUR</span></div>
+<div style="position:absolute;left:488.08px;top:105.71px" class="cls_009"><span class="cls_009">SCORE</span></div>
+<div style="position:absolute;left:48.20px;top:118.28px" class="cls_010"><span class="cls_010">Katherine Chavez</span></div>
+<div style="position:absolute;left:233.00px;top:118.28px" class="cls_010"><span class="cls_010">11/25/16</span></div>
+<div style="position:absolute;left:514.63px;top:131.38px" class="cls_011"><span class="cls_011">Good</span></div>
+<div style="position:absolute;left:450.98px;top:132.43px" class="cls_030"><span class="cls_030">8</span></div>
+<div style="position:absolute;left:498.93px;top:146.98px" class="cls_012"><span class="cls_012">You are within 2 of</span></div>
+<div style="position:absolute;left:48.20px;top:151.57px" class="cls_013"><span class="cls_013">Age:</span></div>
+<div style="position:absolute;left:71.60px;top:151.57px" class="cls_013"><span class="cls_013">27 YO</span></div>
+<div style="position:absolute;left:235.00px;top:151.37px" class="cls_013"><span class="cls_013">Requesting Site:</span></div>
+<div style="position:absolute;left:308.80px;top:151.37px" class="cls_015"><span class="cls_015">Formula Wellness</span></div>
+<div style="position:absolute;left:498.52px;top:156.58px" class="cls_012"><span class="cls_012">your optimal score</span></div>
+<div style="position:absolute;left:48.20px;top:165.17px" class="cls_013"><span class="cls_013">Sex:</span></div>
+<div style="position:absolute;left:71.60px;top:165.17px" class="cls_013"><span class="cls_013">Female</span></div>
+<div style="position:absolute;left:235.00px;top:164.97px" class="cls_013"><span class="cls_013">Physician:</span></div>
+<div style="position:absolute;left:308.80px;top:164.97px" class="cls_015"><span class="cls_015">Dr. Brian Rudman</span></div>
+<div style="position:absolute;left:48.20px;top:178.77px" class="cls_013"><span class="cls_013">ID:</span></div>
+<div style="position:absolute;left:71.60px;top:178.77px" class="cls_013"><span class="cls_013">#12345678</span></div>
+<div style="position:absolute;left:235.00px;top:178.57px" class="cls_013"><span class="cls_013">Lab Ref#:</span></div>
+<div style="position:absolute;left:308.80px;top:178.57px" class="cls_015"><span class="cls_015">18475937</span></div>
+<div style="position:absolute;left:446.91px;top:181.43px" class="cls_014"><span class="cls_014">View page 4 for more details</span></div>
+<div style="position:absolute;left:61.60px;top:248.28px" class="cls_003"><span class="cls_003">Patient Summary</span></div>
+<div style="position:absolute;left:248.80px;top:263.73px" class="cls_016"><span class="cls_016">Areas of Concern</span></div>
+<div style="position:absolute;left:61.60px;top:272.88px" class="cls_015"><span class="cls_015">These results can Lorem ipsum dolor</span></div>
+<div style="position:absolute;left:360.67px;top:277.56px" class="cls_026"><span class="cls_026">1.23</span></div>
+<div style="position:absolute;left:61.60px;top:284.88px" class="cls_015"><span class="cls_015">sit amet, consectetur adipiscing elit,</span></div>
+<div style="position:absolute;left:248.80px;top:290.79px" class="cls_024"><span class="cls_024">Hormones</span></div>
+<div style="position:absolute;left:61.60px;top:296.88px" class="cls_015"><span class="cls_015">sed do eiusmod tempor incididunt ut</span></div>
+<div style="position:absolute;left:314.30px;top:303.77px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:303.77px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:303.77px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:303.77px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:303.77px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:303.77px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:303.77px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:61.60px;top:308.88px" class="cls_015"><span class="cls_015">labore et dolore magn.</span></div>
+<div style="position:absolute;left:61.60px;top:326.88px" class="cls_015"><span class="cls_015">Laboris nisi ut aliquip ex ea comm</span></div>
+<div style="position:absolute;left:61.60px;top:338.88px" class="cls_015"><span class="cls_015">odo consequat. Duis aute irure dolor</span></div>
+<div style="position:absolute;left:362.12px;top:334.67px" class="cls_026"><span class="cls_026">138</span></div>
+<div style="position:absolute;left:248.80px;top:347.90px" class="cls_024"><span class="cls_024">Metabolics</span></div>
+<div style="position:absolute;left:61.60px;top:350.88px" class="cls_015"><span class="cls_015">in reprehenderit in voluptate velit</span></div>
+<div style="position:absolute;left:314.30px;top:360.89px" class="cls_017"><span class="cls_017">135</span></div>
+<div style="position:absolute;left:342.19px;top:360.88px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:381.02px;top:360.89px" class="cls_017"><span class="cls_017">139</span></div>
+<div style="position:absolute;left:415.24px;top:360.89px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:451.18px;top:360.89px" class="cls_017"><span class="cls_017">142</span></div>
+<div style="position:absolute;left:479.57px;top:360.89px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:516.69px;top:360.89px" class="cls_017"><span class="cls_017">145</span></div>
+<div style="position:absolute;left:61.60px;top:362.88px" class="cls_015"><span class="cls_015">esse cillum dolort cupidatat non</span></div>
+<div style="position:absolute;left:61.60px;top:374.88px" class="cls_015"><span class="cls_015">proia. Measured on a scale of 1- 10.</span></div>
+<div style="position:absolute;left:61.60px;top:403.64px" class="cls_009"><span class="cls_009">RECOMMENDED NEXT STEPS</span></div>
+<div style="position:absolute;left:232.49px;top:406.49px" class="cls_015"><span class="cls_015">Lipids</span></div>
+<div style="position:absolute;left:529.21px;top:406.49px" class="cls_023"><span class="cls_023">Good</span></div>
+<div style="position:absolute;left:61.60px;top:417.24px" class="cls_018"><span class="cls_018">Consult your phisician about lasorem</span></div>
+<div style="position:absolute;left:61.60px;top:428.24px" class="cls_018"><span class="cls_018">ipsum dolor sit amet, conse.</span></div>
+<div style="position:absolute;left:232.49px;top:428.00px" class="cls_015"><span class="cls_015">Inflamation</span></div>
+<div style="position:absolute;left:529.20px;top:428.00px" class="cls_023"><span class="cls_023">Good</span></div>
+<div style="position:absolute;left:61.60px;top:450.24px" class="cls_019"><span class="cls_019">Duis aute irure dolor in reprehenderit in</span></div>
+<div style="position:absolute;left:232.48px;top:449.50px" class="cls_015"><span class="cls_015">Kidney</span></div>
+<div style="position:absolute;left:529.20px;top:449.50px" class="cls_023"><span class="cls_023">Good</span></div>
+<div style="position:absolute;left:61.60px;top:461.23px" class="cls_019"><span class="cls_019">voluptate velit esse cillum.</span></div>
+<div style="position:absolute;left:232.48px;top:471.00px" class="cls_015"><span class="cls_015">Liver</span></div>
+<div style="position:absolute;left:536.00px;top:471.00px" class="cls_021"><span class="cls_021">Fair</span></div>
+<div style="position:absolute;left:61.60px;top:480.65px" class="cls_022"><span class="cls_022">View page 3 for more details</span></div>
+<div style="position:absolute;left:232.47px;top:492.51px" class="cls_015"><span class="cls_015">Kidney</span></div>
+<div style="position:absolute;left:536.00px;top:492.51px" class="cls_021"><span class="cls_021">Fair</span></div>
+<div style="position:absolute;left:232.47px;top:514.01px" class="cls_015"><span class="cls_015">Muscle</span></div>
+<div style="position:absolute;left:529.18px;top:514.01px" class="cls_023"><span class="cls_023">Good</span></div>
+<div style="position:absolute;left:232.46px;top:535.52px" class="cls_015"><span class="cls_015">Thyroid</span></div>
+<div style="position:absolute;left:535.98px;top:535.52px" class="cls_021"><span class="cls_021">Fair</span></div>
+<div style="position:absolute;left:412.94px;top:621.37px" class="cls_023"><span class="cls_023">Carvedilol</span></div>
+<div style="position:absolute;left:490.95px;top:624.24px" class="cls_021"><span class="cls_021">Tramadol,</span></div>
+<div style="position:absolute;left:61.60px;top:628.36px" class="cls_003"><span class="cls_003">Quickpath Summary</span></div>
+<div style="position:absolute;left:492.70px;top:633.73px" class="cls_021"><span class="cls_021">Codeine/</span></div>
+<div style="position:absolute;left:480.04px;top:643.23px" class="cls_021"><span class="cls_021">Acetaminophen</span></div>
+<div style="position:absolute;left:61.60px;top:652.96px" class="cls_015"><span class="cls_015">These results can lorem ipsum dolor sit amet, conse</span></div>
+<div style="position:absolute;left:294.48px;top:657.81px" class="cls_024"><span class="cls_024">Glyburide-Metformin,</span></div>
+<div style="position:absolute;left:61.60px;top:664.96px" class="cls_015"><span class="cls_015">ctetur adipiscing elit, sed do eiusmod tempor incididunt</span></div>
+<div style="position:absolute;left:312.21px;top:667.31px" class="cls_024"><span class="cls_024">Atorvastatin</span></div>
+<div style="position:absolute;left:61.60px;top:676.96px" class="cls_015"><span class="cls_015">ut labore et dolore magn adipiscing elit, sed do eiusmod</span></div>
+<div style="position:absolute;left:61.60px;top:688.96px" class="cls_015"><span class="cls_015">eiusmod tempor  tempor.</span></div>
+<div style="position:absolute;left:364.80px;top:688.47px" class="cls_017"><span class="cls_017">-5</span></div>
+<div style="position:absolute;left:388.98px;top:688.47px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:456.16px;top:688.46px" class="cls_029"><span class="cls_029">Rapid</span></div>
+<div style="position:absolute;left:492.55px;top:688.47px" class="cls_017"><span class="cls_017">+5</span></div>
+<div style="position:absolute;left:383.81px;top:710.22px" class="cls_014"><span class="cls_014">View page 9 for more details</span></div>
+<div style="position:absolute;left:100.83px;top:749.18px" class="cls_031"><span class="cls_031">Produced by Global Molecular Labs</span><span class="cls_032"> | 610 Coit Rd. Ste. 200 Plano, Texas 75075 | </span><span class="cls_031">P</span><span class="cls_032"> 972.564-8811 | </span><span class="cls_031">F</span><span class="cls_032"> 972.564.8825</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:1604px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="img/background3.jpg" width=612 height=792></div>
+<div style="position:absolute;left:61.60px;top:117.47px" class="cls_003"><span class="cls_003">Lipids </span><span class="cls_011">(Good)</span></div>
+<div style="position:absolute;left:500.71px;top:126.15px" class="cls_033"><span class="cls_033">3.46</span></div>
+<div style="position:absolute;left:61.60px;top:142.07px" class="cls_015"><span class="cls_015">A complete cholesterol test — also called a lipid panel</span></div>
+<div style="position:absolute;left:61.60px;top:153.67px" class="cls_015"><span class="cls_015">— is a blood test that can measure the amount of</span></div>
+<div style="position:absolute;left:301.20px;top:156.42px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:334.76px;top:156.42px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:378.59px;top:156.42px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:419.14px;top:156.42px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:459.67px;top:156.42px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:494.15px;top:156.42px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:535.40px;top:156.42px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:61.60px;top:165.27px" class="cls_015"><span class="cls_015">cholesterol and triglycerides in your blood.</span></div>
+<div style="position:absolute;left:486.15px;top:199.05px" class="cls_033"><span class="cls_033">3.40</span></div>
+<div style="position:absolute;left:83.40px;top:211.26px" class="cls_033"><span class="cls_033">Lp(a)</span></div>
+<div style="position:absolute;left:314.30px;top:225.26px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:225.26px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:225.26px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:225.26px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:225.26px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:225.26px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:225.26px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:360.67px;top:249.70px" class="cls_026"><span class="cls_026">1.23</span></div>
+<div style="position:absolute;left:83.40px;top:261.12px" class="cls_026"><span class="cls_026">Non-HDL-C</span></div>
+<div style="position:absolute;left:314.30px;top:275.91px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:275.91px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:275.91px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:275.91px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:275.91px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:275.91px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:275.91px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:387.93px;top:300.36px" class="cls_034"><span class="cls_034">1.29</span></div>
+<div style="position:absolute;left:83.40px;top:311.78px" class="cls_034"><span class="cls_034">apoA-I</span></div>
+<div style="position:absolute;left:314.30px;top:326.57px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:326.57px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:326.57px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:326.57px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:326.57px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:326.57px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:326.57px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:360.67px;top:351.01px" class="cls_026"><span class="cls_026">1.23</span></div>
+<div style="position:absolute;left:83.40px;top:362.44px" class="cls_026"><span class="cls_026">apoB</span></div>
+<div style="position:absolute;left:314.30px;top:377.22px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:377.22px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:377.22px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:377.22px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:377.22px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:377.22px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:377.22px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:421.30px;top:401.67px" class="cls_034"><span class="cls_034">2.45</span></div>
+<div style="position:absolute;left:83.40px;top:413.09px" class="cls_034"><span class="cls_034">ApoB/ApoA-I</span></div>
+<div style="position:absolute;left:314.30px;top:427.88px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:427.88px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:427.88px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:427.88px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:427.88px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:427.88px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:427.88px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:486.15px;top:452.32px" class="cls_033"><span class="cls_033">3.40</span></div>
+<div style="position:absolute;left:83.40px;top:464.54px" class="cls_033"><span class="cls_033">LDL-C</span></div>
+<div style="position:absolute;left:314.30px;top:478.53px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:478.53px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:478.53px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:478.53px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:478.53px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:478.53px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:478.53px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:360.67px;top:502.98px" class="cls_026"><span class="cls_026">1.23</span></div>
+<div style="position:absolute;left:83.40px;top:514.40px" class="cls_026"><span class="cls_026">HDL-C</span></div>
+<div style="position:absolute;left:314.30px;top:529.19px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:529.19px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:529.19px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:529.19px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:529.19px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:529.19px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:529.19px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:387.93px;top:553.64px" class="cls_034"><span class="cls_034">1.29</span></div>
+<div style="position:absolute;left:83.40px;top:565.06px" class="cls_034"><span class="cls_034">TC</span></div>
+<div style="position:absolute;left:314.30px;top:579.84px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:579.84px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:579.84px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:579.84px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:579.84px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:579.84px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:579.84px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:360.67px;top:604.29px" class="cls_026"><span class="cls_026">1.23</span></div>
+<div style="position:absolute;left:83.40px;top:615.71px" class="cls_026"><span class="cls_026">Triglycerides</span></div>
+<div style="position:absolute;left:314.30px;top:630.50px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:630.50px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:630.50px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:630.50px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:630.50px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:630.50px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:630.50px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:421.30px;top:655.95px" class="cls_034"><span class="cls_034">2.45</span></div>
+<div style="position:absolute;left:83.40px;top:667.37px" class="cls_034"><span class="cls_034">VLDL-C</span></div>
+<div style="position:absolute;left:314.30px;top:682.16px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:682.16px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:682.16px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:682.16px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:682.16px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:682.16px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:682.16px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:100.83px;top:752.18px" class="cls_031"><span class="cls_031">Produced by Global Molecular Labs</span><span class="cls_032"> | 610 Coit Rd. Ste. 200 Plano, Texas 75075 | </span><span class="cls_031">P</span><span class="cls_032"> 972.564-8811 | </span><span class="cls_031">F</span><span class="cls_032"> 972.564.8825</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:2406px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="img/background4.jpg" width=612 height=792></div>
+<div style="position:absolute;left:61.60px;top:117.28px" class="cls_003"><span class="cls_003">Inflammation </span><span class="cls_011">(Good)</span></div>
+<div style="position:absolute;left:500.71px;top:125.96px" class="cls_033"><span class="cls_033">3.46</span></div>
+<div style="position:absolute;left:61.60px;top:141.88px" class="cls_015"><span class="cls_015">A complete cholesterol test — also called a lipid panel</span></div>
+<div style="position:absolute;left:61.60px;top:153.48px" class="cls_015"><span class="cls_015">— is a blood test that can measure the amount of</span></div>
+<div style="position:absolute;left:301.20px;top:156.22px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:334.76px;top:156.22px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:378.59px;top:156.22px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:419.14px;top:156.22px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:459.67px;top:156.22px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:494.15px;top:156.22px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:535.40px;top:156.22px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:61.60px;top:165.08px" class="cls_015"><span class="cls_015">cholesterol and triglycerides in your blood.</span></div>
+<div style="position:absolute;left:486.15px;top:199.05px" class="cls_033"><span class="cls_033">3.40</span></div>
+<div style="position:absolute;left:83.40px;top:211.26px" class="cls_033"><span class="cls_033">hs-CRP</span></div>
+<div style="position:absolute;left:314.30px;top:225.26px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:225.26px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:225.26px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:225.26px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:225.26px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:225.26px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:225.26px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:486.15px;top:251.44px" class="cls_033"><span class="cls_033">3.40</span></div>
+<div style="position:absolute;left:83.40px;top:261.97px" class="cls_033"><span class="cls_033">LpPLA2</span></div>
+<div style="position:absolute;left:314.30px;top:277.65px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:277.65px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:277.65px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:277.65px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:277.65px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:277.65px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:277.65px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:360.67px;top:302.08px" class="cls_026"><span class="cls_026">1.23</span></div>
+<div style="position:absolute;left:83.40px;top:313.51px" class="cls_026"><span class="cls_026">MPO (GT)</span></div>
+<div style="position:absolute;left:314.30px;top:328.29px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:328.29px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:328.29px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:328.29px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:328.29px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:328.29px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:328.29px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:61.60px;top:380.48px" class="cls_003"><span class="cls_003">Muscle </span><span class="cls_011">(Good)</span></div>
+<div style="position:absolute;left:500.71px;top:389.16px" class="cls_033"><span class="cls_033">3.46</span></div>
+<div style="position:absolute;left:61.60px;top:405.08px" class="cls_015"><span class="cls_015">A complete cholesterol test — also called a lipid panel</span></div>
+<div style="position:absolute;left:61.60px;top:416.68px" class="cls_015"><span class="cls_015">— is a blood test that can measure the amount of</span></div>
+<div style="position:absolute;left:301.20px;top:419.42px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:334.76px;top:419.42px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:378.59px;top:419.42px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:419.14px;top:419.42px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:459.67px;top:419.42px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:494.15px;top:419.42px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:535.40px;top:419.42px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:61.60px;top:428.28px" class="cls_015"><span class="cls_015">cholesterol and triglycerides in your blood.</span></div>
+<div style="position:absolute;left:486.15px;top:464.11px" class="cls_033"><span class="cls_033">3.40</span></div>
+<div style="position:absolute;left:83.40px;top:476.32px" class="cls_033"><span class="cls_033">CK (GT)</span></div>
+<div style="position:absolute;left:314.30px;top:490.32px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:490.32px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:490.32px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:490.32px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:490.32px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:490.32px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:490.32px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:486.15px;top:516.50px" class="cls_033"><span class="cls_033">3.40</span></div>
+<div style="position:absolute;left:83.40px;top:527.03px" class="cls_034"><span class="cls_034">NT-proBNP</span></div>
+<div style="position:absolute;left:314.30px;top:542.71px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:542.71px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:542.71px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:542.71px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:542.71px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:542.71px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:542.71px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:360.67px;top:567.14px" class="cls_026"><span class="cls_026">1.23</span></div>
+<div style="position:absolute;left:83.40px;top:578.57px" class="cls_026"><span class="cls_026">Uric Acid (GT)</span></div>
+<div style="position:absolute;left:314.30px;top:593.35px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:593.35px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:593.35px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:593.35px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:593.35px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:593.35px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:593.35px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:100.83px;top:749.18px" class="cls_031"><span class="cls_031">Produced by Global Molecular Labs</span><span class="cls_032"> | 610 Coit Rd. Ste. 200 Plano, Texas 75075 | </span><span class="cls_031">P</span><span class="cls_032"> 972.564-8811 | </span><span class="cls_031">F</span><span class="cls_032"> 972.564.8825</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:3208px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="img/background5.jpg" width=612 height=792></div>
+<div style="position:absolute;left:61.60px;top:113.48px" class="cls_003"><span class="cls_003">Liver </span><span class="cls_011">(Good)</span></div>
+<div style="position:absolute;left:500.71px;top:122.16px" class="cls_033"><span class="cls_033">3.46</span></div>
+<div style="position:absolute;left:61.60px;top:138.08px" class="cls_015"><span class="cls_015">A complete cholesterol test — also called a lipid panel</span></div>
+<div style="position:absolute;left:61.60px;top:149.68px" class="cls_015"><span class="cls_015">— is a blood test that can measure the amount of</span></div>
+<div style="position:absolute;left:301.20px;top:152.42px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:334.76px;top:152.42px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:378.59px;top:152.42px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:419.14px;top:152.42px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:459.67px;top:152.42px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:494.15px;top:152.42px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:535.40px;top:152.42px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:61.60px;top:161.28px" class="cls_015"><span class="cls_015">cholesterol and triglycerides in your blood.</span></div>
+<div style="position:absolute;left:486.15px;top:197.65px" class="cls_033"><span class="cls_033">3.40</span></div>
+<div style="position:absolute;left:83.40px;top:208.34px" class="cls_033"><span class="cls_033">ALT</span></div>
+<div style="position:absolute;left:314.30px;top:223.86px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:223.86px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:223.86px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:223.86px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:223.86px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:223.86px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:223.86px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:387.93px;top:250.75px" class="cls_034"><span class="cls_034">1.29</span></div>
+<div style="position:absolute;left:83.40px;top:262.17px" class="cls_034"><span class="cls_034">Albumin</span></div>
+<div style="position:absolute;left:314.30px;top:276.96px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:276.96px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:276.96px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:276.96px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:276.96px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:276.96px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:276.96px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:360.67px;top:303.91px" class="cls_026"><span class="cls_026">1.23</span></div>
+<div style="position:absolute;left:83.40px;top:313.85px" class="cls_026"><span class="cls_026">Alkaline Phosphatase</span></div>
+<div style="position:absolute;left:314.30px;top:330.12px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:330.12px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:330.12px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:330.12px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:330.12px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:330.12px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:330.12px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:486.15px;top:359.06px" class="cls_033"><span class="cls_033">3.40</span></div>
+<div style="position:absolute;left:83.40px;top:369.75px" class="cls_033"><span class="cls_033">AST</span></div>
+<div style="position:absolute;left:314.30px;top:385.27px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:385.27px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:385.27px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:385.27px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:385.27px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:385.27px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:385.27px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:61.60px;top:420.58px" class="cls_003"><span class="cls_003">Kidney </span><span class="cls_011">(Good)</span></div>
+<div style="position:absolute;left:500.71px;top:429.26px" class="cls_033"><span class="cls_033">3.46</span></div>
+<div style="position:absolute;left:61.60px;top:445.18px" class="cls_015"><span class="cls_015">A complete cholesterol test — also called a lipid panel</span></div>
+<div style="position:absolute;left:61.60px;top:456.78px" class="cls_015"><span class="cls_015">— is a blood test that can measure the amount of</span></div>
+<div style="position:absolute;left:301.20px;top:459.53px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:334.76px;top:459.53px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:378.59px;top:459.53px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:419.14px;top:459.53px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:459.67px;top:459.53px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:494.15px;top:459.53px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:535.40px;top:459.53px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:61.60px;top:468.38px" class="cls_015"><span class="cls_015">cholesterol and triglycerides in your blood.</span></div>
+<div style="position:absolute;left:486.15px;top:504.76px" class="cls_033"><span class="cls_033">3.40</span></div>
+<div style="position:absolute;left:83.40px;top:515.45px" class="cls_033"><span class="cls_033">BUN</span></div>
+<div style="position:absolute;left:314.30px;top:530.97px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:530.97px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:530.97px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:530.97px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:530.97px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:530.97px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:530.97px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:387.93px;top:557.86px" class="cls_034"><span class="cls_034">1.29</span></div>
+<div style="position:absolute;left:83.40px;top:569.28px" class="cls_034"><span class="cls_034">Creatinine</span></div>
+<div style="position:absolute;left:314.30px;top:584.07px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:584.07px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:584.07px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:584.07px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:584.07px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:584.07px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:584.07px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:360.67px;top:611.02px" class="cls_026"><span class="cls_026">1.23</span></div>
+<div style="position:absolute;left:83.40px;top:620.96px" class="cls_026"><span class="cls_026">BUN/Creatinine</span></div>
+<div style="position:absolute;left:314.30px;top:637.23px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:637.23px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:637.23px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:637.23px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:637.23px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:637.23px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:637.23px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:486.15px;top:666.16px" class="cls_033"><span class="cls_033">3.40</span></div>
+<div style="position:absolute;left:83.40px;top:676.86px" class="cls_033"><span class="cls_033">eGFR/Creatinine</span></div>
+<div style="position:absolute;left:314.30px;top:692.37px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:692.37px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:692.37px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:692.37px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:692.37px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:692.37px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:692.37px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:102.06px;top:752.18px" class="cls_031"><span class="cls_031">Produced by Global Molecular Labs</span><span class="cls_032">| 610 Coit Rd. Ste. 200 Plano, Texas 75075 | </span><span class="cls_031">P</span><span class="cls_032"> 972.564-8811 | </span><span class="cls_031">F</span><span class="cls_032"> 972.564.8825</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:4010px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="img/background6.jpg" width=612 height=792></div>
+<div style="position:absolute;left:61.60px;top:113.48px" class="cls_003"><span class="cls_003">Metabolics </span><span class="cls_011">(Good)</span></div>
+<div style="position:absolute;left:500.71px;top:122.16px" class="cls_033"><span class="cls_033">3.46</span></div>
+<div style="position:absolute;left:61.60px;top:138.08px" class="cls_015"><span class="cls_015">A complete cholesterol test — also called a lipid panel</span></div>
+<div style="position:absolute;left:61.60px;top:149.68px" class="cls_015"><span class="cls_015">— is a blood test that can measure the amount of</span></div>
+<div style="position:absolute;left:301.20px;top:152.42px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:334.76px;top:152.42px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:378.59px;top:152.42px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:419.14px;top:152.42px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:459.67px;top:152.42px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:494.15px;top:152.42px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:535.40px;top:152.42px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:61.60px;top:161.28px" class="cls_015"><span class="cls_015">cholesterol and triglycerides in your blood.</span></div>
+<div style="position:absolute;left:486.15px;top:197.65px" class="cls_033"><span class="cls_033">3.40</span></div>
+<div style="position:absolute;left:83.40px;top:208.34px" class="cls_033"><span class="cls_033">Adiponectin</span></div>
+<div style="position:absolute;left:314.30px;top:223.86px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:223.86px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:223.86px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:223.86px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:223.86px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:223.86px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:223.86px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:387.93px;top:250.75px" class="cls_034"><span class="cls_034">1.29</span></div>
+<div style="position:absolute;left:83.40px;top:262.17px" class="cls_034"><span class="cls_034">C-Peptide</span></div>
+<div style="position:absolute;left:314.30px;top:276.96px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:276.96px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:276.96px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:276.96px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:276.96px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:276.96px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:276.96px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:360.67px;top:303.91px" class="cls_026"><span class="cls_026">1.23</span></div>
+<div style="position:absolute;left:83.40px;top:313.85px" class="cls_026"><span class="cls_026">**GSP (GT)</span></div>
+<div style="position:absolute;left:314.30px;top:330.12px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:330.12px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:330.12px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:330.12px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:330.12px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:330.12px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:330.12px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:486.15px;top:359.06px" class="cls_033"><span class="cls_033">3.40</span></div>
+<div style="position:absolute;left:83.40px;top:369.74px" class="cls_034"><span class="cls_034">Glucose (LT)</span></div>
+<div style="position:absolute;left:314.30px;top:385.27px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:385.27px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:385.27px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:385.27px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:385.27px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:385.27px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:385.27px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:486.15px;top:413.65px" class="cls_033"><span class="cls_033">3.40</span></div>
+<div style="position:absolute;left:83.40px;top:424.34px" class="cls_033"><span class="cls_033">HbA1c (LT)</span></div>
+<div style="position:absolute;left:314.30px;top:439.86px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:439.86px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:439.86px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:439.86px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:439.86px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:439.86px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:439.86px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:387.93px;top:466.75px" class="cls_034"><span class="cls_034">1.29</span></div>
+<div style="position:absolute;left:83.40px;top:478.17px" class="cls_034"><span class="cls_034">Insulin (LT)</span></div>
+<div style="position:absolute;left:314.30px;top:492.96px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:492.96px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:492.96px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:492.96px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:492.96px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:492.96px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:492.96px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:360.67px;top:519.91px" class="cls_026"><span class="cls_026">1.23</span></div>
+<div style="position:absolute;left:83.40px;top:529.85px" class="cls_026"><span class="cls_026">Homocysteine</span></div>
+<div style="position:absolute;left:314.30px;top:546.12px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:546.12px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:546.12px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:546.12px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:546.12px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:546.12px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:546.12px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:486.15px;top:575.06px" class="cls_033"><span class="cls_033">3.40</span></div>
+<div style="position:absolute;left:83.40px;top:585.74px" class="cls_033"><span class="cls_033">Vitamin D,</span></div>
+<div style="position:absolute;left:314.30px;top:601.27px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:601.27px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:601.27px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:601.27px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:601.27px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:601.27px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:601.27px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:100.83px;top:749.18px" class="cls_031"><span class="cls_031">Produced by Global Molecular Labs</span><span class="cls_032"> | 610 Coit Rd. Ste. 200 Plano, Texas 75075 | </span><span class="cls_031">P</span><span class="cls_032"> 972.564-8811 | </span><span class="cls_031">F</span><span class="cls_032"> 972.564.8825</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:4812px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="img/background7.jpg" width=612 height=792></div>
+<div style="position:absolute;left:61.60px;top:117.47px" class="cls_003"><span class="cls_003">Hormones </span><span class="cls_011">(Good)</span></div>
+<div style="position:absolute;left:500.71px;top:126.15px" class="cls_033"><span class="cls_033">3.46</span></div>
+<div style="position:absolute;left:61.60px;top:142.07px" class="cls_015"><span class="cls_015">A complete cholesterol test — also called a lipid panel</span></div>
+<div style="position:absolute;left:61.60px;top:153.67px" class="cls_015"><span class="cls_015">— is a blood test that can measure the amount of</span></div>
+<div style="position:absolute;left:301.20px;top:156.42px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:334.76px;top:156.42px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:378.59px;top:156.42px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:419.14px;top:156.42px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:459.67px;top:156.42px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:494.15px;top:156.42px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:535.40px;top:156.42px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:61.60px;top:165.27px" class="cls_015"><span class="cls_015">cholesterol and triglycerides in your blood.</span></div>
+<div style="position:absolute;left:486.15px;top:199.05px" class="cls_033"><span class="cls_033">3.40</span></div>
+<div style="position:absolute;left:83.40px;top:211.26px" class="cls_033"><span class="cls_033">DHEA-S</span></div>
+<div style="position:absolute;left:314.30px;top:225.26px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:225.26px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:225.26px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:225.26px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:225.26px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:225.26px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:225.26px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:360.67px;top:249.70px" class="cls_026"><span class="cls_026">1.23</span></div>
+<div style="position:absolute;left:83.40px;top:261.12px" class="cls_034"><span class="cls_034">Estradiol</span></div>
+<div style="position:absolute;left:314.30px;top:275.91px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:275.91px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:275.91px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:275.91px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:275.91px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:275.91px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:275.91px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:387.93px;top:300.36px" class="cls_034"><span class="cls_034">1.29</span></div>
+<div style="position:absolute;left:83.40px;top:311.78px" class="cls_026"><span class="cls_026">FSH</span></div>
+<div style="position:absolute;left:314.30px;top:326.57px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:326.57px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:326.57px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:326.57px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:326.57px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:326.57px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:326.57px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:360.67px;top:351.01px" class="cls_026"><span class="cls_026">1.23</span></div>
+<div style="position:absolute;left:83.40px;top:362.44px" class="cls_033"><span class="cls_033">Free Testosterone</span></div>
+<div style="position:absolute;left:314.30px;top:377.22px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:377.22px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:377.22px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:377.22px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:377.22px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:377.22px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:377.22px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:421.30px;top:401.67px" class="cls_034"><span class="cls_034">2.45</span></div>
+<div style="position:absolute;left:83.40px;top:413.09px" class="cls_026"><span class="cls_026">Total Testosterone</span></div>
+<div style="position:absolute;left:314.30px;top:427.88px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:427.88px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:427.88px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:427.88px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:427.88px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:427.88px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:427.88px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:486.15px;top:452.32px" class="cls_033"><span class="cls_033">3.40</span></div>
+<div style="position:absolute;left:83.40px;top:464.54px" class="cls_033"><span class="cls_033">LH</span></div>
+<div style="position:absolute;left:314.30px;top:478.53px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:478.53px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:478.53px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:478.53px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:478.53px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:478.53px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:478.53px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:360.67px;top:502.98px" class="cls_026"><span class="cls_026">1.23</span></div>
+<div style="position:absolute;left:83.40px;top:514.40px" class="cls_033"><span class="cls_033">Progesterone</span></div>
+<div style="position:absolute;left:314.30px;top:529.19px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:529.19px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:529.19px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:529.19px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:529.19px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:529.19px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:529.19px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:387.93px;top:553.64px" class="cls_034"><span class="cls_034">1.29</span></div>
+<div style="position:absolute;left:83.40px;top:565.06px" class="cls_034"><span class="cls_034">SHBG</span></div>
+<div style="position:absolute;left:314.30px;top:579.84px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:579.84px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:579.84px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:579.84px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:579.84px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:579.84px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:579.84px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:100.83px;top:749.18px" class="cls_031"><span class="cls_031">Produced by Global Molecular Labs</span><span class="cls_032"> | 610 Coit Rd. Ste. 200 Plano, Texas 75075 | </span><span class="cls_031">P</span><span class="cls_032"> 972.564-8811 | </span><span class="cls_031">F</span><span class="cls_032"> 972.564.8825</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:5614px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="img/background8.jpg" width=612 height=792></div>
+<div style="position:absolute;left:61.60px;top:113.48px" class="cls_003"><span class="cls_003">Thyroid </span><span class="cls_011">(Good)</span></div>
+<div style="position:absolute;left:500.71px;top:122.16px" class="cls_033"><span class="cls_033">3.46</span></div>
+<div style="position:absolute;left:61.60px;top:138.08px" class="cls_015"><span class="cls_015">A complete cholesterol test — also called a lipid panel</span></div>
+<div style="position:absolute;left:61.60px;top:149.68px" class="cls_015"><span class="cls_015">— is a blood test that can measure the amount of</span></div>
+<div style="position:absolute;left:301.20px;top:152.42px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:334.76px;top:152.42px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:378.59px;top:152.42px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:419.14px;top:152.42px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:459.67px;top:152.42px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:494.15px;top:152.42px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:535.40px;top:152.42px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:61.60px;top:161.28px" class="cls_015"><span class="cls_015">cholesterol and triglycerides in your blood.</span></div>
+<div style="position:absolute;left:486.15px;top:197.65px" class="cls_033"><span class="cls_033">3.40</span></div>
+<div style="position:absolute;left:83.40px;top:208.34px" class="cls_033"><span class="cls_033">TSH</span></div>
+<div style="position:absolute;left:314.30px;top:223.86px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:223.86px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:223.86px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:223.86px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:223.86px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:223.86px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:223.86px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:387.93px;top:250.75px" class="cls_034"><span class="cls_034">1.29</span></div>
+<div style="position:absolute;left:83.40px;top:262.17px" class="cls_034"><span class="cls_034">Insulin (LT)</span></div>
+<div style="position:absolute;left:314.30px;top:276.96px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:276.96px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:276.96px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:276.96px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:276.96px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:276.96px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:276.96px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:360.67px;top:303.91px" class="cls_026"><span class="cls_026">1.23</span></div>
+<div style="position:absolute;left:83.40px;top:313.85px" class="cls_026"><span class="cls_026">Total T3</span></div>
+<div style="position:absolute;left:314.30px;top:330.12px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:330.12px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:330.12px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:330.12px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:330.12px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:330.12px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:330.12px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:486.15px;top:359.06px" class="cls_033"><span class="cls_033">3.40</span></div>
+<div style="position:absolute;left:83.40px;top:369.74px" class="cls_033"><span class="cls_033">Free T4</span></div>
+<div style="position:absolute;left:314.30px;top:385.27px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:385.27px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:385.27px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:385.27px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:385.27px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:385.27px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:385.27px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:486.15px;top:411.79px" class="cls_033"><span class="cls_033">3.40</span></div>
+<div style="position:absolute;left:83.40px;top:422.48px" class="cls_033"><span class="cls_033">Total T4</span></div>
+<div style="position:absolute;left:314.30px;top:438.00px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:438.00px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:438.00px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:438.00px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:438.00px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:438.00px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:438.00px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:100.83px;top:749.18px" class="cls_031"><span class="cls_031">Produced by Global Molecular Labs</span><span class="cls_032"> | 610 Coit Rd. Ste. 200 Plano, Texas 75075 | </span><span class="cls_031">P</span><span class="cls_032"> 972.564-8811 | </span><span class="cls_031">F</span><span class="cls_032"> 972.564.8825</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:6416px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="img/background9.jpg" width=612 height=792></div>
+<div style="position:absolute;left:412.94px;top:114.52px" class="cls_023"><span class="cls_023">Carvedilol</span></div>
+<div style="position:absolute;left:490.95px;top:117.39px" class="cls_021"><span class="cls_021">Tramadol,</span></div>
+<div style="position:absolute;left:61.60px;top:121.51px" class="cls_003"><span class="cls_003">Quickpath Summary</span></div>
+<div style="position:absolute;left:492.70px;top:126.88px" class="cls_021"><span class="cls_021">Codeine/</span></div>
+<div style="position:absolute;left:480.04px;top:136.38px" class="cls_021"><span class="cls_021">Acetaminophen</span></div>
+<div style="position:absolute;left:61.60px;top:146.11px" class="cls_015"><span class="cls_015">These results can lorem ipsum dolor sit amet, conse</span></div>
+<div style="position:absolute;left:294.48px;top:150.96px" class="cls_024"><span class="cls_024">Glyburide-Metformin,</span></div>
+<div style="position:absolute;left:61.60px;top:158.11px" class="cls_015"><span class="cls_015">ctetur adipiscing elit, sed do eiusmod tempor incididunt</span></div>
+<div style="position:absolute;left:312.21px;top:160.46px" class="cls_024"><span class="cls_024">Atorvastatin</span></div>
+<div style="position:absolute;left:61.60px;top:170.11px" class="cls_015"><span class="cls_015">ut labore et dolore magn adipiscing elit, sed do eiusmod</span></div>
+<div style="position:absolute;left:61.60px;top:182.11px" class="cls_015"><span class="cls_015">eiusmod tempor  tempor.</span></div>
+<div style="position:absolute;left:364.80px;top:181.61px" class="cls_017"><span class="cls_017">-5</span></div>
+<div style="position:absolute;left:388.97px;top:181.61px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:456.16px;top:181.61px" class="cls_029"><span class="cls_029">Rapid</span></div>
+<div style="position:absolute;left:492.54px;top:181.61px" class="cls_017"><span class="cls_017">+5</span></div>
+<div style="position:absolute;left:360.67px;top:220.05px" class="cls_026"><span class="cls_026">1.23</span></div>
+<div style="position:absolute;left:83.40px;top:229.99px" class="cls_026"><span class="cls_026">SLCO-1B1</span></div>
+<div style="position:absolute;left:314.30px;top:246.26px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:246.26px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:246.26px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:246.26px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:246.26px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:246.26px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:246.26px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:486.15px;top:273.87px" class="cls_033"><span class="cls_033">3.40</span></div>
+<div style="position:absolute;left:83.40px;top:284.40px" class="cls_033"><span class="cls_033">APOE</span></div>
+<div style="position:absolute;left:314.30px;top:300.08px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:300.08px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:300.08px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:300.08px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:300.08px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:300.08px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:300.08px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:387.93px;top:327.05px" class="cls_034"><span class="cls_034">1.29</span></div>
+<div style="position:absolute;left:83.40px;top:337.95px" class="cls_034"><span class="cls_034">VKORC1</span></div>
+<div style="position:absolute;left:314.30px;top:353.26px" class="cls_017"><span class="cls_017">.27</span></div>
+<div style="position:absolute;left:342.19px;top:353.26px" class="cls_029"><span class="cls_029">Poor</span></div>
+<div style="position:absolute;left:379.27px;top:353.26px" class="cls_017"><span class="cls_017">1.28</span></div>
+<div style="position:absolute;left:415.24px;top:353.26px" class="cls_027"><span class="cls_027">Fair</span></div>
+<div style="position:absolute;left:450.11px;top:353.26px" class="cls_017"><span class="cls_017">3.27</span></div>
+<div style="position:absolute;left:479.57px;top:353.26px" class="cls_028"><span class="cls_028">Good</span></div>
+<div style="position:absolute;left:514.52px;top:353.26px" class="cls_017"><span class="cls_017">4.20</span></div>
+<div style="position:absolute;left:100.84px;top:749.18px" class="cls_031"><span class="cls_031">Porduced by Global Molecular Labs</span><span class="cls_032"> | 610 Coit Rd. Ste. 200 Plano, Texas 75075 | </span><span class="cls_031">P</span><span class="cls_032"> 972.564-8811 | </span><span class="cls_031">F</span><span class="cls_032"> 972.564.8825</span></div>
+</div>
+
+</body>
+</html>
